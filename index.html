@@ -46,15 +46,15 @@
     <section class="hero section" id="top">
       <div class="hero-copy reveal">
         <p class="eyebrow">Paris, France · Open to opportunities</p>
-        <h1>Siva Kalyan<br><span>Karicheti.</span></h1>
-        <p class="hero-lede">I build practical systems where <strong>artificial intelligence</strong>, enterprise software and data meet.</p>
+        <h1><span class="name-first" id="hero-first-name">Siva Kalyan</span><br><span id="hero-last-name">Karicheti.</span></h1>
+        <p class="hero-lede" id="hero-title">I build practical systems where <strong>artificial intelligence</strong>, enterprise software and data meet.</p>
         <div class="hero-actions">
           <a class="button primary" href="#work">Explore my work</a>
           <a class="button ghost" href="https://www.linkedin.com/in/sivakalyankaricheti/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
       </div>
-      <div class="hero-visual reveal" aria-hidden="true">
-        <div class="orbit"><div class="monogram">SK</div><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+      <div class="hero-visual reveal">
+        <div class="orbit"><img id="profile-image" src="assets/profile.jpg" alt="Portrait of Siva Kalyan Karicheti"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
         <p>AI <span>×</span> ERP <span>×</span> DATA</p>
       </div>
     </section>
@@ -64,8 +64,8 @@
     <section class="section split" id="about">
       <div><p class="section-index">01 / About</p><h2>Curious by nature.<br>Practical by design.</h2></div>
       <div class="prose reveal">
-        <p>I am an MSc Artificial Intelligence student at ECE Engineering School in Paris, with a B.Tech in Computer Science and Engineering and hands-on ERP development experience.</p>
-        <p>My work spans SAP ABAP, Python, data visualization and web technologies. I enjoy turning technical requirements into reliable solutions—and learning the system deeply enough to improve it.</p>
+        <p id="about-primary">I am an MSc Artificial Intelligence student at ECE Engineering School in Paris, with a B.Tech in Computer Science and Engineering and hands-on ERP development experience.</p>
+        <p id="about-secondary">My work spans SAP ABAP, Python, data visualization and web technologies. I enjoy turning technical requirements into reliable solutions—and learning the system deeply enough to improve it.</p>
         <div class="facts"><div><strong>2026</strong><span>MSc AI began</span></div><div><strong>7.5</strong><span>B.Tech GPA</span></div><div><strong>4</strong><span>Languages</span></div></div>
       </div>
     </section>
@@ -88,21 +88,26 @@
       </div>
     </section>
 
+    <section class="section achievements" id="achievements">
+      <p class="section-index">04 / Achievements</p>
+      <div class="achievement-grid" id="achievement-grid"></div>
+    </section>
+
     <section class="section skills">
-      <p class="section-index">04 / Toolkit</p>
+      <p class="section-index">05 / Toolkit & credentials</p>
       <div class="skill-cloud reveal"><span>Python</span><span>SAP ABAP</span><span>AWS</span><span>MySQL</span><span>Power BI</span><span>Data visualization</span><span>Statistics</span><span>C</span><span>HTML</span><span>CSS</span></div>
-      <div class="certs reveal"><h3>Credentials</h3><p>SAP ABAP · Wipro TalentNext · EPAM University Program · ICDSAI 2024 · Google</p></div>
+      <div class="certs reveal"><h3>Credentials</h3><div class="certificate-list" id="certificate-list"></div></div>
     </section>
 
     <section class="section contact" id="contact">
-      <p class="section-index">05 / Contact</p>
+      <p class="section-index">06 / Contact</p>
       <h2>Let’s build something<br><span>useful together.</span></h2>
       <p>For AI, data, ERP or software opportunities, I’d be glad to connect.</p>
-      <div class="contact-links"><a href="mailto:kalyankaricheti@gmail.com">kalyankaricheti@gmail.com ↗</a><a href="https://www.linkedin.com/in/sivakalyankaricheti/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+      <div class="contact-links"><a id="email-link" href="mailto:kalyankaricheti@gmail.com">kalyankaricheti@gmail.com ↗</a><a id="phone-link" href="tel:+33745755101">+33 7 45 75 51 01 ↗</a><a id="linkedin-link" href="https://www.linkedin.com/in/sivakalyankaricheti/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
     </section>
   </main>
 
-  <footer><p>© <span id="year"></span> Siva Kalyan Karicheti</p><a href="#top">Back to top ↑</a></footer>
+  <footer><p>© <span id="year"></span> Siva Kalyan Karicheti</p><div class="footer-links"><a href="admin.html">Admin</a><a href="#top">Back to top ↑</a></div></footer>
   <script src="script.js"></script>
 </body>
 </html>

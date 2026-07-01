@@ -17,6 +17,12 @@ From this folder, run `python -m http.server 8000`, then open `http://localhost:
 
 Google indexing is not instant or guaranteed; it commonly takes several days or longer after submission.
 
+## Admin editor
+
+Open `admin.html` (or `/admin.html` on the live site) to edit the public identity, contact details, achievements, certificates and profile image.
+
+Publishing requires a fine-grained GitHub personal access token restricted to the `Kalyan-Web` repository with **Contents: Read and write** permission. The editor sends the token directly to GitHub for that publish request and does not save it in local storage or the repository. Revoke or rotate the token from GitHub settings whenever needed.
+
 ## Privacy note
 
 The public site intentionally omits date of birth, street addresses, family details and old phone numbers found in earlier resumes. Do not publish the supplied PDFs without redacting those details.
