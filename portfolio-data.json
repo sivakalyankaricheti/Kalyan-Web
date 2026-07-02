@@ -36,15 +36,16 @@
     {"number": "02", "category": "IoT, Research & Safety", "title": "GuardianAir", "description": "A sensor-driven airbag inflation concept designed to reduce Sudden Infant Death Syndrome risk through real-time sleep monitoring and responsive IoT safety mechanisms.", "link": ""},
     {"number": "03", "category": "HTML, CSS, JavaScript & PHP", "title": "Puzzle game", "description": "A browser-based puzzle game combining a responsive front end with a PHP backend connection.", "link": ""}
   ],
+  "gallery": [],
   "achievements": [
     {"year": "2024", "title": "International conference publication", "description": "GuardianAir research was presented at the International Conference on Data Science and Artificial Intelligence (ICDSAI 2024)."},
     {"year": "2025", "title": "Enterprise logistics delivery", "description": "Delivered SAP ABAP forms, ALV programs, integrations and production support for logistics workflows."}
   ],
   "certificates": [
-    {"name": "SAP ABAP", "issuer": "My Learn Nest Institute"},
-    {"name": "Wipro TalentNext", "issuer": "Wipro"},
-    {"name": "EPAM University Program", "issuer": "EPAM"},
-    {"name": "ICDSAI 2024", "issuer": "International Conference"},
-    {"name": "Google Certificate", "issuer": "Google"}
+    {"name": "SAP ABAP", "issuer": "My Learn Nest Institute", "url": ""},
+    {"name": "Wipro TalentNext", "issuer": "Wipro", "url": ""},
+    {"name": "EPAM University Program", "issuer": "EPAM", "url": ""},
+    {"name": "ICDSAI 2024", "issuer": "International Conference", "url": ""},
+    {"name": "Google Certificate", "issuer": "Google", "url": ""}
   ]
 }
