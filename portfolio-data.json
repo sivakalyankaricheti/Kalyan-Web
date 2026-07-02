@@ -7,61 +7,43 @@
   "profileImage": "assets/profile.jpg",
   "contact": {
     "email": "kalyankaricheti@gmail.com",
-    "phone": "+33 7 45 75 51 01",
-    "linkedin": "https://www.linkedin.com/in/sivakalyankaricheti/"
+    "phone": "+33 7 45 75 51 01"
   },
   "personalDetails": [
-    {"value":"2026","label":"MSc AI began"},
-    {"value":"7.5","label":"B.Tech GPA"},
-    {"value":"4","label":"Languages"}
+    {"value": "2026", "label": "MSc AI began"},
+    {"value": "7.5", "label": "B.Tech GPA"},
+    {"value": "4", "label": "Languages"}
   ],
   "socialLinks": [
-    {"label":"GitHub","url":"https://github.com/sivakalyankaricheti"},
-    {"label":"LinkedIn","url":"https://www.linkedin.com/in/sivakalyankaricheti/"}
+    {"label": "GitHub", "url": "https://github.com/sivakalyankaricheti"},
+    {"label": "LinkedIn", "url": "https://www.linkedin.com/in/sivakalyankaricheti/"}
   ],
-  "skills": ["Python", "SAP ABAP", "AWS", "MySQL", "Power BI", "Data Visualization", "Statistics", "C", "HTML", "CSS"],
+  "skills": [
+    "Python (Pandas, NumPy, Scikit-learn)", "SAP ABAP", "AWS", "MySQL", "Power BI",
+    "Data Visualization", "Statistics (GA4)", "C Language", "HTML & CSS", "Tableau", "SQL",
+    "ChatGPT, Claude & Microsoft Copilot", "Excel (Pivot Tables, Dashboards, XLOOKUP)",
+    "Adaptability", "Stakeholder Collaboration", "Curiosity & Continuous Learning",
+    "Problem Solving", "Professional Communication"
+  ],
   "experience": [
-    {"period":"Mar 2026-Present","location":"Paris, France","title":"MSc in Artificial Intelligence","organization":"ECE Engineering School","description":"Developing advanced foundations in AI while connecting them to real-world software and data problems."},
-    {"period":"May 2025-Jan 2026","location":"Hyderabad, India","title":"ERP Developer","organization":"Global One Services (GOS)","description":"Supported ERP development, customization and maintenance; wrote and modified code, helped configure systems, troubleshot issues and created technical documentation."},
-    {"period":"2020-2024","location":"Visakhapatnam, India","title":"B.Tech, Computer Science & Engineering","organization":"Anil Neerukonda Institute of Technology and Sciences","description":"Graduated with a 7.5 GPA and completed a final-year IoT safety research project presented at an international conference."}
+    {"period": "Mar 2026-Present", "location": "Paris, France", "title": "MSc in Artificial Intelligence", "organization": "ECE Engineering School", "description": "Developing advanced foundations in AI while connecting them to real-world software and data problems."},
+    {"period": "May 2025-Jan 2026", "location": "Hyderabad, India", "title": "ERP Developer", "organization": "Global One Services (GOS)", "description": "Supported ERP development, customization and maintenance; wrote and modified code, helped configure systems, troubleshot issues and created technical documentation."},
+    {"period": "2020-2024", "location": "Visakhapatnam, India", "title": "B.Tech, Computer Science & Engineering", "organization": "Anil Neerukonda Institute of Technology and Sciences", "description": "Graduated with a 7.5 GPA and completed a final-year IoT safety research project presented at an international conference."}
   ],
   "projects": [
-    {"number":"01","category":"SAP ABAP · Enterprise systems","title":"NVIDIA logistics workflows","description":"Developed Smart Forms for packing lists, commercial invoices and bills of lading; built ALV programs for POD updates; integrated carrier data and updated delivery tracking with BAdI implementations.","link":""},
-    {"number":"02","category":"IoT · Research · Safety","title":"GuardianAir","description":"A sensor-driven airbag inflation concept designed to reduce Sudden Infant Death Syndrome risk through real-time sleep monitoring and responsive IoT safety mechanisms.","link":""},
-    {"number":"03","category":"HTML · CSS · JavaScript · PHP","title":"Puzzle game","description":"A browser-based puzzle game combining a responsive front end with a PHP backend connection.","link":""}
+    {"number": "01", "category": "SAP ABAP & Enterprise systems", "title": "NVIDIA logistics workflows", "description": "Developed Smart Forms for packing lists, commercial invoices and bills of lading; built ALV programs for POD updates; integrated carrier data and updated delivery tracking with BAdI implementations.", "link": ""},
+    {"number": "02", "category": "IoT, Research & Safety", "title": "GuardianAir", "description": "A sensor-driven airbag inflation concept designed to reduce Sudden Infant Death Syndrome risk through real-time sleep monitoring and responsive IoT safety mechanisms.", "link": ""},
+    {"number": "03", "category": "HTML, CSS, JavaScript & PHP", "title": "Puzzle game", "description": "A browser-based puzzle game combining a responsive front end with a PHP backend connection.", "link": ""}
   ],
   "achievements": [
-    {
-      "year": "2024",
-      "title": "International conference publication",
-      "description": "GuardianAir research was presented at the International Conference on Data Science and Artificial Intelligence (ICDSAI 2024)."
-    },
-    {
-      "year": "2025",
-      "title": "Enterprise logistics delivery",
-      "description": "Delivered SAP ABAP forms, ALV programs, integrations and production support for logistics workflows."
-    }
+    {"year": "2024", "title": "International conference publication", "description": "GuardianAir research was presented at the International Conference on Data Science and Artificial Intelligence (ICDSAI 2024)."},
+    {"year": "2025", "title": "Enterprise logistics delivery", "description": "Delivered SAP ABAP forms, ALV programs, integrations and production support for logistics workflows."}
   ],
   "certificates": [
-    {
-      "name": "SAP ABAP",
-      "issuer": "My Learn Nest Institute"
-    },
-    {
-      "name": "Wipro TalentNext",
-      "issuer": "Wipro"
-    },
-    {
-      "name": "EPAM University Program",
-      "issuer": "EPAM"
-    },
-    {
-      "name": "ICDSAI 2024",
-      "issuer": "International Conference"
-    },
-    {
-      "name": "Google Certificate",
-      "issuer": "Google"
-    }
+    {"name": "SAP ABAP", "issuer": "My Learn Nest Institute"},
+    {"name": "Wipro TalentNext", "issuer": "Wipro"},
+    {"name": "EPAM University Program", "issuer": "EPAM"},
+    {"name": "ICDSAI 2024", "issuer": "International Conference"},
+    {"name": "Google Certificate", "issuer": "Google"}
   ]
 }
