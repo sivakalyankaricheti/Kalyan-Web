@@ -91,15 +91,7 @@
       "number": "01",
       "category": "SAP ABAP & Enterprise systems",
       "title": "NVIDIA logistics workflows",
-      "description": "Developed Smart Forms for packing lists, commercial invoices and bills of lading
-•Built ALV programs for POD updates, integrated carrier data and updated delivery tracking with BAdI implementations.
-•Developed packing list, commercial invoice and bill of lading
-•Smartforms as per client specification which includes barcode,logo etc.
-•Worked on screen painter, menu painter, tabstrip, table control.
-•Developed ALV programs to update POD status in the background.
-•Developed data dictionary objects to integrate carriers with the shipping transaction as per business specification.
-•Used BADI to update tracking information on delivery header .
-•Resolved production issues and post production support.",
+      "description": "Developed Smart Forms for packing lists, commercial invoices and bills of lading. •Built ALV programs for POD updates, integrated carrier data and updated delivery tracking with BAdI implementations. •Developed packing list, commercial invoice and bill of lading. •Smartforms as per client specification which includes barcode,logo etc. •Worked on screen painter, menu painter, tabstrip, table control. •Developed ALV programs to update POD status in the background. •Developed data dictionary objects to integrate carriers with the shipping transaction as per business specification. •Used BADI to update tracking information on delivery header . •Resolved production issues and post production support.",
       "link1Label": "GitHub source",
       "link1": "",
       "link2Label": "Live demo",
@@ -153,15 +145,7 @@ is a leading cause of sudden baby deaths in the US. This study examines "Guardia
   "certificates": [
     {
       "name": "SAP ABAP",
-      "description": "SAP ABAP
-•Exclusive knowledge of RICEF(Reports,Interfaces,Conversions,Enhacements And Forms) objects. 2020 – 2024 2018-2020 2017 – 2018.
-•Knowledge on Data Dictionary objects like Tables, Views, Structures, Table maintenance.
-•Extensive Knowledge in generating of Reports (Classical, Interactive and ALV).
-•Conversions: Call Transaction and Session Method’s using Data Migration.
-•Basic Knowledge in Enhancements User exits, Customer exists, BADI’S.
-•Knowledge on Layouts: SMARTFORMS Knowledge.
-•Good Knowledge on Modulepool Programming and creating different types of modulepool concept connecting different concepts in it for creating Asset Mangement for Organisation.
-•Debugging techniques – Break Points to debugging."
+      "description": "SAP ABAP•Exclusive knowledge of RICEF(Reports,Interfaces,Conversions,Enhacements And Forms) objects. 2020 – 2024 2018-2020 2017 – 2018. •Knowledge on Data Dictionary objects like Tables, Views, Structures, Table maintenance. •Extensive Knowledge in generating of Reports (Classical, Interactive and ALV). •Conversions: Call Transaction and Session Method’s using Data Migration. •Basic Knowledge in Enhancements User exits, Customer exists, BADI’S. •Knowledge on Layouts: SMARTFORMS Knowledge. •Good Knowledge on Modulepool Programming and creating different types of modulepool concept connecting different concepts in it for creating Asset Mangement for Organisation. •Debugging techniques – Break Points to debugging."
       "issuer": "My Learn Nest Institute",
       "url": "assets/certificates/1782983826238-kalyan-abap-certificate.pdf?v=1782983827469"
     },
