@@ -5,26 +5,25 @@
   "aboutPrimary": "I am an MSc Artificial Intelligence student at ECE Engineering School in Paris, with a B.Tech in Computer Science and Engineering and hands-on ERP development experience.",
   "aboutSecondary": "My work spans SAP ABAP, Python, data visualization and web technologies. I enjoy turning technical requirements into reliable solutions and learning the system deeply enough to improve it.",
   "profileImage": "assets/profile.jpg",
-  "contact": {
-    "email": "kalyankaricheti@gmail.com",
-    "phone": "+33 7 45 75 51 01"
-  },
-  "personalInfo": [],
+  "contact": {"email": "kalyankaricheti@gmail.com", "phone": "+33 7 45 75 51 01"},
+  "personalInfo": [
+    {"label": "Address", "value": "33 Rue Jacqueline Quatremaire 93700 Drancy"},
+    {"label": "Date of birth", "value": "22 June 2003"}
+  ],
   "personalDetails": [
-    {"value": "2026", "label": "MSc AI began"},
+    {"value": "2026", "label": "MSc AI"},
     {"value": "7.5", "label": "B.Tech GPA"},
-    {"value": "4", "label": "Languages"}
+    {"value": "French, English, Telugu, Hindi", "label": "Languages"}
   ],
   "socialLinks": [
     {"label": "GitHub", "url": "https://github.com/sivakalyankaricheti"},
     {"label": "LinkedIn", "url": "https://www.linkedin.com/in/sivakalyankaricheti/"}
   ],
   "skills": [
-    "Python (Pandas, NumPy, Scikit-learn)", "SAP ABAP", "AWS", "MySQL", "Power BI",
-    "Data Visualization", "Statistics (GA4)", "C Language", "HTML & CSS", "Tableau", "SQL",
-    "ChatGPT, Claude & Microsoft Copilot", "Excel (Pivot Tables, Dashboards, XLOOKUP)",
-    "Adaptability", "Stakeholder Collaboration", "Curiosity & Continuous Learning",
-    "Problem Solving", "Professional Communication"
+    "Python (Pandas, NumPy, Scikit-learn)", "SAP ABAP", "AWS", "MySQL", "Power BI", "Data Visualization",
+    "Statistics (GA4)", "C Language", "HTML & CSS", "Tableau", "SQL", "ChatGPT, Claude & Microsoft Copilot",
+    "Excel (Pivot Tables, Dashboards, XLOOKUP)", "Adaptability", "Stakeholder Collaboration",
+    "Curiosity & Continuous Learning", "Problem Solving", "Professional Communication"
   ],
   "experience": [
     {"period": "Mar 2026-Present", "location": "Paris, France", "title": "MSc in Artificial Intelligence", "organization": "ECE Engineering School", "description": "Developing advanced foundations in AI while connecting them to real-world software and data problems."},
@@ -34,7 +33,8 @@
   "projects": [
     {"number": "01", "category": "SAP ABAP & Enterprise systems", "title": "NVIDIA logistics workflows", "description": "Developed Smart Forms for packing lists, commercial invoices and bills of lading; built ALV programs for POD updates; integrated carrier data and updated delivery tracking with BAdI implementations.", "link1Label": "GitHub source", "link1": "", "link2Label": "Live demo", "link2": ""},
     {"number": "02", "category": "IoT, Research & Safety", "title": "GuardianAir", "description": "A sensor-driven airbag inflation concept designed to reduce Sudden Infant Death Syndrome risk through real-time sleep monitoring and responsive IoT safety mechanisms.", "link1Label": "Research link", "link1": "", "link2Label": "Project link", "link2": ""},
-    {"number": "03", "category": "HTML, CSS, JavaScript & PHP", "title": "Puzzle game", "description": "A browser-based puzzle game combining a responsive front end with a PHP backend connection.", "link1Label": "GitHub source", "link1": "", "link2Label": "Live demo", "link2": ""}
+    {"number": "03", "category": "HTML, CSS, JavaScript & PHP", "title": "Student Performance Analytics Dashboard", "description": "Modern educational institutions generate vast amounts of student data, spanning academic performance (grades), attendance logs, and digital engagement metrics. However, these data streams often remain siloed and underutilized due to a lack of specialized analytical frameworks. The Student Performance Analytics Dashboard project successfully addressed this challenge by building an end-to-end data processing pipeline and an interactive visualization system tailored for instructors and institutional administrators.", "link1Label": "GitHub source", "link1": "https://github.com/sivakalyankaricheti/Student-Management", "link2Label": "Live demo", "link2": "https://student-management-yj5d.onrender.com/"},
+    {"number": "04", "category": "Python and PgAdmin 4", "title": "Bitcoin and BlockCypher", "description": "In this project, I gain experience creating transactions using the Bitcoin and BlockCypher testnet blockchains and Bitcoin Script. The starter code uses python-bitcoinlib, a low-level Python library for manipulating Bitcoin transactions, outputs, inputs, scriptPubKey and scriptSig validation.", "link1Label": "GitHub source", "link1": "https://github.com/sivakalyankaricheti/Blockchain-Final-Project", "link2Label": "Live demo", "link2": ""}
   ],
   "gallery": [],
   "achievements": [
@@ -42,10 +42,11 @@
     {"year": "2025", "title": "Enterprise logistics delivery", "description": "Delivered SAP ABAP forms, ALV programs, integrations and production support for logistics workflows."}
   ],
   "certificates": [
-    {"name": "SAP ABAP", "issuer": "My Learn Nest Institute", "url": ""},
-    {"name": "Wipro TalentNext", "issuer": "Wipro", "url": ""},
-    {"name": "EPAM University Program", "issuer": "EPAM", "url": ""},
-    {"name": "ICDSAI 2024", "issuer": "International Conference", "url": ""},
-    {"name": "Google Certificate", "issuer": "Google", "url": ""}
+    {"name": "SAP ABAP", "issuer": "My Learn Nest Institute", "url": "assets/certificates/1782983826238-kalyan-abap-certificate.pdf?v=1782983827469"},
+    {"name": "Wipro TalentNext", "issuer": "Wipro", "url": "assets/certificates/1782983827469-emailing-wipro-talentnext-java-full-stack-certification.pdf?v=1782983828867"},
+    {"name": "EPAM University Program", "issuer": "EPAM", "url": "assets/certificates/1782983828867-epam-karicheti-siva-kalyan.pdf?v=1782983832005"},
+    {"name": "ICDSAI 2024", "issuer": "International Conference", "url": "assets/certificates/1782983832005-icdsai-2024-presentation-certificate-karicheti-siva-kalyan-.pdf?v=1782983833576"},
+    {"name": "Google Certificate", "issuer": "Google", "url": "assets/certificates/1782983833576-coursera-6watqknapquh-certificate.pdf?v=1782983834912"},
+    {"name": "Power BI", "issuer": "PWC Forage", "url": "assets/certificates/1782983834912-forage-certificate.pdf?v=1782983836249"}
   ]
 }
