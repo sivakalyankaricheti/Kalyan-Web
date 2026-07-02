@@ -9,18 +9,27 @@
     "email": "kalyankaricheti@gmail.com",
     "phone": "+33 7 45 75 51 01"
   },
-  "personalInfo": [],
+  "personalInfo": [
+    {
+      "label": "Address",
+      "value": "33 Rue Jacqueline Quatremaire 93700 Drancy"
+    },
+    {
+      "label": "Date of birth",
+      "value": "22 June 2003"
+    }
+  ],
   "personalDetails": [
     {
       "value": "2026",
-      "label": "MSc AI began"
+      "label": "MSc AI"
     },
     {
       "value": "7.5",
       "label": "B.Tech GPA"
     },
     {
-      "value": "4",
+      "value": "French, English, Telugu, Hindi",
       "label": "Languages"
     }
   ],
@@ -95,9 +104,16 @@
     {
       "number": "03",
       "category": "HTML, CSS, JavaScript & PHP",
-      "title": "Puzzle game",
-      "description": "A browser-based puzzle game combining a responsive front end with a PHP backend connection.",
-      "link": ""
+      "title": "Student Performance Analytics Dashboard",
+      "description": "Modern educational institutions generate vast amounts of student data, spanning\nacademic performance (grades), attendance logs, and digital engagement\nmetrics. However, these data streams often remain siloed and underutilized due\nto a lack of specialized analytical frameworks. The Student Performance\nAnalytics Dashboard project successfully addressed this challenge by building an\nend-to-end data processing pipeline and an interactive visualization system\ntailored for instructors and institutional administrators.",
+      "link": "Github:https://github.com/sivakalyankaricheti/Student-Management              Live URL:https://student-management-yj5d.onrender.com/"
+    },
+    {
+      "number": "04",
+      "category": "Python and PgAdmin 4",
+      "title": "Bitcoin and BlockCypher",
+      "description": "In this project, I gain experience creating transactions using the Bitcoin and BlockCypher testnet blockchains and Bitcoin Script. This project consists of 4 questions, each of which is explained below. The starter code we provide uses python-bitcoinlib, a free, low-level Python~3 library for manipulating Bitcoin transactions. Bitcoin transactions are fundamentally a list of outputs, each of which is associated with an amount of bitcoin that is ``locked'' with a puzzle in the form of a program called a scriptPubKey (also sometimes called a ``smart contract''), and a list of inputs, each of which references an output from the list of outputs and includes the ``answer'' to that output's puzzle in the form of a program called a scriptSig. Validating a scriptSig consists of appending the associated scriptPubKey to it, running the combined script and ensuring that it outputs True.",
+      "link": "https://github.com/sivakalyankaricheti/Blockchain-Final-Project"
     }
   ],
   "gallery": [],
