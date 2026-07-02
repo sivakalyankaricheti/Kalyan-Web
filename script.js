@@ -21,6 +21,7 @@ async function loadPortfolio(){
     const email=document.getElementById('email-link'); email.href=`mailto:${data.contact.email}`; email.textContent=`${data.contact.email} ↗`;
     const phone=document.getElementById('phone-link'); phone.href=`tel:${data.contact.phone.replace(/\s/g,'')}`; phone.textContent=`${data.contact.phone} ↗`;
     const linkedin=document.getElementById('linkedin-link'); linkedin.href=data.contact.linkedin;
+    document.getElementById('skill-cloud').replaceChildren(...(data.skills||[]).map(value=>{const skill=document.createElement('span');skill.textContent=value;return skill}));
     document.getElementById('achievement-grid').replaceChildren(...data.achievements.map(item=>{const card=document.createElement('article');card.className='achievement-card reveal';const year=document.createElement('span');year.className='year';year.textContent=item.year;const title=document.createElement('h3');title.textContent=item.title;const description=document.createElement('p');description.textContent=item.description;card.append(year,title,description);return card}));
     document.getElementById('certificate-list').replaceChildren(...data.certificates.map(item=>{const row=document.createElement('div');row.className='certificate-item';const name=document.createElement('strong');name.textContent=item.name;const issuer=document.createElement('span');issuer.textContent=item.issuer;row.append(name,issuer);return row}));
     observeReveals();
