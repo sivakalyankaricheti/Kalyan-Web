@@ -12,15 +12,37 @@
   },
   "skills": ["Python", "SAP ABAP", "AWS", "MySQL", "Power BI", "Data Visualization", "Statistics", "C", "HTML", "CSS"],
   "achievements": [
-    {"year":"2024","title":"International conference publication","description":"GuardianAir research was presented at the International Conference on Data Science and Artificial Intelligence (ICDSAI 2024)."},
-    {"year":"2025","title":"Enterprise logistics delivery","description":"Delivered SAP ABAP forms, ALV programs, integrations and production support for logistics workflows."},
-    {"year":"2026","title":"MSc in Artificial Intelligence","description":"Began advanced AI studies at ECE Engineering School in Paris."}
+    {
+      "year": "2024",
+      "title": "International conference publication",
+      "description": "GuardianAir research was presented at the International Conference on Data Science and Artificial Intelligence (ICDSAI 2024)."
+    },
+    {
+      "year": "2025",
+      "title": "Enterprise logistics delivery",
+      "description": "Delivered SAP ABAP forms, ALV programs, integrations and production support for logistics workflows."
+    }
   ],
   "certificates": [
-    {"name":"SAP ABAP","issuer":"My Learn Nest Institute"},
-    {"name":"Wipro TalentNext","issuer":"Wipro"},
-    {"name":"EPAM University Program","issuer":"EPAM"},
-    {"name":"ICDSAI 2024","issuer":"International Conference"},
-    {"name":"Google Certificate","issuer":"Google"}
+    {
+      "name": "SAP ABAP",
+      "issuer": "My Learn Nest Institute"
+    },
+    {
+      "name": "Wipro TalentNext",
+      "issuer": "Wipro"
+    },
+    {
+      "name": "EPAM University Program",
+      "issuer": "EPAM"
+    },
+    {
+      "name": "ICDSAI 2024",
+      "issuer": "International Conference"
+    },
+    {
+      "name": "Google Certificate",
+      "issuer": "Google"
+    }
   ]
 }
