@@ -9,6 +9,7 @@
     "email": "kalyankaricheti@gmail.com",
     "phone": "+33 7 45 75 51 01"
   },
+  "personalInfo": [],
   "personalDetails": [
     {"value": "2026", "label": "MSc AI began"},
     {"value": "7.5", "label": "B.Tech GPA"},
