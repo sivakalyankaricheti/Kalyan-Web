@@ -12,7 +12,7 @@ const addPersonalInfo=(value={label:'Custom detail',value:''})=>addFromTemplate(
 const addPersonal=(value={value:'',label:''})=>addFromTemplate('personal-template','personal-editor',value);
 const addSocial=(value={label:'',url:''})=>addFromTemplate('social-template','social-editor',value);
 const addExperience=(value={period:'',location:'',title:'',organization:'',description:''})=>addFromTemplate('experience-template','experience-editor',value);
-const addProject=(value={number:'',category:'',title:'',description:'',link:''})=>addFromTemplate('project-template','project-editor',value);
+const addProject=(value={number:'',category:'',title:'',description:'',link1Label:'GitHub source',link1:'',link2Label:'Live demo',link2:''})=>{if(value.link&&!value.link1){value={...value,link1:value.link,link1Label:'View project'}}addFromTemplate('project-template','project-editor',value)};
 const addGallery=(value={title:'',description:'',image:'',url:''})=>addFromTemplate('gallery-template','gallery-editor',value);
 const addSkill=(value={value:''})=>addFromTemplate('skill-template','skill-editor',value);
 const addAchievement=(value={year:'',title:'',description:''})=>addFromTemplate('achievement-template','achievement-editor',value);

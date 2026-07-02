@@ -32,9 +32,9 @@
     {"period": "2020-2024", "location": "Visakhapatnam, India", "title": "B.Tech, Computer Science & Engineering", "organization": "Anil Neerukonda Institute of Technology and Sciences", "description": "Graduated with a 7.5 GPA and completed a final-year IoT safety research project presented at an international conference."}
   ],
   "projects": [
-    {"number": "01", "category": "SAP ABAP & Enterprise systems", "title": "NVIDIA logistics workflows", "description": "Developed Smart Forms for packing lists, commercial invoices and bills of lading; built ALV programs for POD updates; integrated carrier data and updated delivery tracking with BAdI implementations.", "link": ""},
-    {"number": "02", "category": "IoT, Research & Safety", "title": "GuardianAir", "description": "A sensor-driven airbag inflation concept designed to reduce Sudden Infant Death Syndrome risk through real-time sleep monitoring and responsive IoT safety mechanisms.", "link": ""},
-    {"number": "03", "category": "HTML, CSS, JavaScript & PHP", "title": "Puzzle game", "description": "A browser-based puzzle game combining a responsive front end with a PHP backend connection.", "link": ""}
+    {"number": "01", "category": "SAP ABAP & Enterprise systems", "title": "NVIDIA logistics workflows", "description": "Developed Smart Forms for packing lists, commercial invoices and bills of lading; built ALV programs for POD updates; integrated carrier data and updated delivery tracking with BAdI implementations.", "link1Label": "GitHub source", "link1": "", "link2Label": "Live demo", "link2": ""},
+    {"number": "02", "category": "IoT, Research & Safety", "title": "GuardianAir", "description": "A sensor-driven airbag inflation concept designed to reduce Sudden Infant Death Syndrome risk through real-time sleep monitoring and responsive IoT safety mechanisms.", "link1Label": "Research link", "link1": "", "link2Label": "Project link", "link2": ""},
+    {"number": "03", "category": "HTML, CSS, JavaScript & PHP", "title": "Puzzle game", "description": "A browser-based puzzle game combining a responsive front end with a PHP backend connection.", "link1Label": "GitHub source", "link1": "", "link2Label": "Live demo", "link2": ""}
   ],
   "gallery": [],
   "achievements": [
