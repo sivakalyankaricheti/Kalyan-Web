@@ -10,7 +10,26 @@
     "phone": "+33 7 45 75 51 01",
     "linkedin": "https://www.linkedin.com/in/sivakalyankaricheti/"
   },
-  "skills": ["Python", "SAP ABAP", "AWS", "MySQL", "Power BI", "Data Visualization", "Statistics", "C", "HTML", "CSS"],
+  "skills": [
+    "Python(Pandas,NumPy,Scikit-learn)",
+    "SAP ABAP",
+    "AWS",
+    "MySQL",
+    "Power BI",
+    "Data Visualization",
+    "Statistics(GA4)",
+    "C Language",
+    "HTML,CSS",
+    "Tableu",
+    "SQL",
+    "ChatGPT, Claude, Microsoft Copilot",
+    "Excel(Pivot Tables, Dashboards,XLOOKUP)",
+    "Adaptability",
+    "Stakeholder Collaboration",
+    "Curiosity & Continuous Learning",
+    "Problem Solving",
+    "Professional Communication"
+  ],
   "achievements": [
     {
       "year": "2024",
