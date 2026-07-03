@@ -4,6 +4,7 @@ let portfolioData=null;
 const $=id=>document.getElementById(id);
 const encodeBase64=text=>{const bytes=new TextEncoder().encode(text);let binary='';bytes.forEach(byte=>binary+=String.fromCharCode(byte));return btoa(binary)};
 const sha256=async value=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value)))).map(byte=>byte.toString(16).padStart(2,'0')).join('');
+$('password-toggle').addEventListener('click',()=>{const input=$('admin-password'),button=$('password-toggle'),show=input.type==='password';input.type=show?'text':'password';button.setAttribute('aria-label',show?'Hide password':'Show password');button.title=show?'Hide password':'Show password';button.classList.toggle('visible',show)});
 async function github(path,token,options={}){const response=await fetch(`${API}/repos/${OWNER}/${REPO}/contents/${path}`,{...options,headers:{Accept:'application/vnd.github+json',Authorization:`Bearer ${token}`,'X-GitHub-Api-Version':'2022-11-28',...(options.headers||{})}});if(!response.ok){const body=await response.json().catch(()=>({}));throw new Error(body.message||`GitHub returned ${response.status}`)}return response.json()}
 async function loadData(){const response=await fetch(`${DATA_PATH}?v=${Date.now()}`,{cache:'no-store'});if(!response.ok)throw new Error('Portfolio data unavailable');portfolioData=await response.json();fillForm(portfolioData)}
 function clearAndFill(id,items=[],builder){$(id).replaceChildren();(items||[]).forEach(builder)}
