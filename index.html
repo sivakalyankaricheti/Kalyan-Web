@@ -59,7 +59,7 @@
       </div>
     </section>
 
-    <section class="marquee" aria-label="Core skills"><div>PYTHON(Pandas, NumPy, Scikit-learn) · SAP ABAP · ARTIFICIAL INTELLIGENCE · AWS · POWER BI · MYSQL · DATA VISUALIZATION · SQL . CHATGPT / CLAUDE / MICROSOFT COPILOT . ANALYTICS(GA4) . TABLEAU . EXCEL(PIVOT TABLES, XLOOKUP, DASHBOARD) . C LANGUAGE . HTML . CSS. JSON . JAVASCRIPT . REACT .  </div></section>
+    <section class="marquee" aria-label="Core skills"><div class="marquee-track"><span>PYTHON (Pandas, NumPy, Scikit-learn) · SAP ABAP · ARTIFICIAL INTELLIGENCE · AWS · POWER BI · MYSQL · DATA VISUALIZATION · SQL · CHATGPT / CLAUDE / MICROSOFT COPILOT · ANALYTICS (GA4) · TABLEAU · EXCEL (PIVOT TABLES, XLOOKUP, DASHBOARDS) · C LANGUAGE · HTML · CSS · JSON · JAVASCRIPT · REACT ·</span><span aria-hidden="true">PYTHON (Pandas, NumPy, Scikit-learn) · SAP ABAP · ARTIFICIAL INTELLIGENCE · AWS · POWER BI · MYSQL · DATA VISUALIZATION · SQL · CHATGPT / CLAUDE / MICROSOFT COPILOT · ANALYTICS (GA4) · TABLEAU · EXCEL (PIVOT TABLES, XLOOKUP, DASHBOARDS) · C LANGUAGE · HTML · CSS · JSON · JAVASCRIPT · REACT ·</span></div></section>
 
     <section class="section split" id="about">
       <div><p class="section-index">About</p><h2>Curious by Nature.<br>Practical by Design.</h2></div>
@@ -92,8 +92,13 @@
     </section>
 
     <section class="section skills">
-      <p class="section-index">oolkit & credentials</p>
+      <p class="section-index">Toolkit & credentials</p>
+      <p class="skill-instruction">Tap a skill to view details <span aria-hidden="true">↔</span></p>
       <div class="skill-cloud reveal" id="skill-cloud"></div>
+      <div class="skill-detail" id="skill-detail" role="region" aria-live="polite" hidden>
+        <button class="skill-detail-close" id="skill-detail-close" type="button" aria-label="Close skill details">×</button>
+        <p>Skill details</p><h3 id="skill-detail-title"></h3><div id="skill-detail-description"></div>
+      </div>
       <div class="certs reveal"><h3>Credentials</h3><div class="certificate-list" id="certificate-list"></div></div>
     </section>
 
