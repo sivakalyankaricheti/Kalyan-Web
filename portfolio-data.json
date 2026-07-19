@@ -46,7 +46,7 @@
   "skills": [
     {
       "name": "Python (Pandas, NumPy, Scikit-learn)",
-      "description": ""
+      "description": "•Extensive knowledge in data manipulation using Pandas - DataFrames, merging, grouping, pivoting.\n•Knowledge on numerical computing with NumPy - arrays, broadcasting, vectorized operations.\n•Knowledge on building Machine Learning models using Scikit-learn - regression, classification, clustering.\n•Good knowledge on model evaluation train-test split, cross-validation, accuracy/precision/recall.\n•Basic knowledge in exploratory data analysis and visualization using Matplotlib and Seaborn.\n•Basic knowledge in feature engineering and handling missing data."
     },
     {
       "name": "SAP ABAP",
@@ -54,47 +54,47 @@
     },
     {
       "name": "AWS",
-      "description": ""
+      "description": "•Knowledge on core compute services – EC2 instances and basic deployment.\n•Knowledge on storage services – S3 buckets and object storage concepts.\n•Basic knowledge in Identity and Access Management (IAM) – users, roles, permissions.\n•Basic knowledge in database services – RDS fundamentals"
     },
     {
       "name": "MySQL",
-      "description": ""
+      "description": "•Extensive knowledge in relational database design – schemas and normalization.\n•Knowledge on writing complex queries – JOINs, subqueries, GROUP BY, HAVING.\n•Good knowledge on indexing and basic query optimization.\n•Basic knowledge in stored procedures and triggers."
     },
     {
       "name": "Power BI",
-      "description": ""
+      "description": "•Extensive knowledge in data modeling – relationships and star schema design.\n•Knowledge on DAX (Data Analysis Expressions) for measures and calculated columns.\n•Good knowledge on Power Query for data transformation and cleaning.\n•Knowledge on building interactive dashboards with slicers and filters."
     },
     {
       "name": "Data Visualization",
-      "description": ""
+      "description": "•Knowledge on selecting appropriate chart types for different data.\n•Extensive knowledge in building dashboards using Power BI and Tableau.\n•Basic knowledge in visualization libraries in Python – Matplotlib, Seaborn."
     },
     {
       "name": "Statistics (GA4)",
-      "description": ""
+      "description": "•Knowledge on setting up tracking and events in Google Analytics 4.\n•Basic knowledge in interpreting traffic sources, engagement, and conversions.\n•Basic knowledge in building custom reports and exploring user behavior."
     },
     {
       "name": "C Language",
-      "description": ""
+      "description": "•Knowledge on programming logic and control flow.\n•Extensive knowledge in memory management – pointers, dynamic memory allocation.\n•Knowledge on data structures – arrays, linked lists, stacks, queues."
     },
     {
       "name": "HTML & CSS",
-      "description": ""
+      "description": "•Knowledge on structuring web pages using semantic HTML elements.\n•Basic knowledge in forms, tables, and accessibility basics.\n•Knowledge on styling – selectors, box model, Flexbox, Grid.\n•Basic knowledge in responsive design using media queries."
     },
     {
       "name": "Tableau",
-      "description": ""
+      "description": "•Extensive knowledge in connecting to and blending multiple data sources.\n•Knowledge on building calculated fields and parameters.\n•Good knowledge on designing interactive dashboards with filters and actions."
     },
     {
       "name": "SQL",
-      "description": ""
+      "description": "•Extensive knowledge in writing SELECT queries with filtering, sorting, and aggregation.\n•Knowledge on JOIN operations – inner, left, right, full joins.\n•Good knowledge on subqueries and nested queries.\n•Basic knowledge in window functions."
     },
     {
       "name": "ChatGPT, Claude & Microsoft Copilot",
-      "description": ""
+      "description": "•Knowledge on prompt engineering for accurate, structured outputs.\n•Extensive knowledge in using AI assistants for code generation, debugging, and documentation.\n•Basic knowledge in using AI tools for research summarization and content drafting."
     },
     {
       "name": "Excel (Pivot Tables, Dashboards, XLOOKUP)",
-      "description": ""
+      "description": "•Extensive knowledge in building Pivot Tables for data summarization.\n•Knowledge on XLOOKUP and other lookup functions.\n•Good knowledge on building dynamic dashboards using charts and slicers.\n•Basic knowledge in conditional formatting and data validation."
     },
     {
       "name": "Adaptability",
@@ -115,6 +115,10 @@
     {
       "name": "Professional Communication",
       "description": ""
+    },
+    {
+      "name": "Artificial Intelligence",
+      "description": "•Knowledge on supervised and unsupervised learning – regression, classification, clustering, dimensionality reduction.\n•Knowledge on neural network architectures – ANN, CNN, RNN fundamentals.\n•Extensive knowledge in model training concepts – loss functions, gradient descent, overfitting/underfitting.\n•Basic knowledge in Natural Language Processing – tokenization, embeddings, text classification.\n•Basic knowledge in AI ethics and responsible AI practices."
     }
   ],
   "experience": [
