@@ -79,6 +79,9 @@ const menuButton=document.querySelector('.menu-button');
 const navLinks=document.querySelector('.nav-links');
 menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));navLinks.classList.toggle('open')});
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false')}));
+const glassBlurRange=document.getElementById('glass-blur-range'),glassBlurValue=document.getElementById('glass-blur-value'),glassBlurStorageKey='portfolio-mobile-glass-blur';
+const applyGlassBlur=value=>{const blur=Math.max(0,Math.min(24,Math.round(Number(value)||0)));document.documentElement.style.setProperty('--mobile-glass-blur',`${blur}px`);document.documentElement.style.setProperty('--mobile-control-blur',`${Math.round(blur*2/3)}px`);document.documentElement.style.setProperty('--mobile-menu-blur',`${Math.round(blur*4/3)}px`);glassBlurRange.value=String(blur);glassBlurValue.textContent=`${blur}px`};
+if(glassBlurRange&&glassBlurValue){let savedBlur;try{savedBlur=localStorage.getItem(glassBlurStorageKey)}catch(error){}applyGlassBlur(savedBlur??glassBlurRange.value);glassBlurRange.addEventListener('input',()=>{applyGlassBlur(glassBlurRange.value);try{localStorage.setItem(glassBlurStorageKey,glassBlurRange.value)}catch(error){}})}
 document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('skill-detail-close').addEventListener('click',()=>{document.getElementById('skill-detail').hidden=true;document.querySelectorAll('.skill-chip').forEach(node=>{node.classList.remove('active');node.setAttribute('aria-pressed','false')})});
 
