@@ -2,6 +2,8 @@ const UI_TRANSLATIONS={
   en:{navAbout:'About',navExperience:'Experience',navWork:'Work',navGallery:'Gallery',navContact:'Contact',exploreWork:'Explore my work',aboutLabel:'About',aboutHeading:'Curious by Nature.<br>Practical by Design.',experienceLabel:'Experience & Education Background',projectsLabel:'Projects',achievementsLabel:'Achievements & Events',galleryLabel:'Gallery',galleryEmpty:'Gallery.',skillsLabel:'Technical Skills & Soft Skills',skillInstruction:'Tap a skill to view details',skillDetails:'Skill details',credentials:'Credentials',contactLabel:'Contact Details',contactHeading:'Let’s build something<br><span>useful together.</span>',contactText:'For AI, data, ERP or software opportunities, I’d be glad to connect.',backToTop:'Back to top ↑',openTo:'Open to opportunities',skillFallback:'Details for this skill can be added from the Admin page.',viewProject:'View project',moreDetails:'More details',openLink:'Open link ↗',viewCertificate:'View certificate ↗',portrait:'Portrait of'},
   fr:{navAbout:'À propos',navExperience:'Expérience',navWork:'Projets',navGallery:'Galerie',navContact:'Contact',exploreWork:'Découvrir mes projets',aboutLabel:'À propos',aboutHeading:'Curieux par nature.<br>Pragmatique par conception.',experienceLabel:'Expérience et formation',projectsLabel:'Projets',achievementsLabel:'Réalisations et événements',galleryLabel:'Galerie',galleryEmpty:'Galerie.',skillsLabel:'Compétences techniques et humaines',skillInstruction:'Touchez une compétence pour afficher les détails',skillDetails:'Détails de la compétence',credentials:'Certifications',contactLabel:'Coordonnées',contactHeading:'Construisons quelque chose<br><span>d’utile ensemble.</span>',contactText:'Pour des opportunités en IA, données, ERP ou logiciel, je serais ravi d’échanger.',backToTop:'Retour en haut ↑',openTo:'Ouvert aux opportunités',skillFallback:'Les détails de cette compétence peuvent être ajoutés depuis la page Admin.',viewProject:'Voir le projet',moreDetails:'Plus de détails',openLink:'Ouvrir le lien ↗',viewCertificate:'Voir le certificat ↗',portrait:'Portrait de'}
 };
+Object.assign(UI_TRANSLATIONS.en,{introKicker:'AI · DATA · SOFTWARE',introDescription:'Building practical systems where artificial intelligence, enterprise software and data meet.',introEnter:'Enter portfolio',introSkip:'Skip intro'});
+Object.assign(UI_TRANSLATIONS.fr,{introKicker:'IA · DONNÉES · LOGICIELS',introDescription:'Je conçois des systèmes concrets à la rencontre de l’intelligence artificielle, des logiciels d’entreprise et des données.',introEnter:'Entrer dans le portfolio',introSkip:'Passer l’introduction'});
 const FRENCH_CONTENT={
   headline:'Je conçois des systèmes concrets à la rencontre de l’intelligence artificielle, des logiciels d’entreprise et des données.',
   aboutPrimary:'Je suis étudiant en MSc Intelligence Artificielle à l’ECE, école d’ingénieurs à Paris, titulaire d’un B.Tech en informatique et fort d’une expérience pratique en développement ERP.',
@@ -31,6 +33,27 @@ function applyUiLanguage(){document.documentElement.lang=currentLanguage;documen
 function localizeData(source){if(currentLanguage==='en')return source;const data=JSON.parse(JSON.stringify(source));data.headline=FRENCH_CONTENT.headline;data.aboutPrimary=FRENCH_CONTENT.aboutPrimary;data.aboutSecondary=FRENCH_CONTENT.aboutSecondary;data.personalInfo=(data.personalInfo||[]).map(item=>({...item,label:FRENCH_CONTENT.personalInfoLabels[item.label]||item.label}));data.personalDetails=(data.personalDetails||[]).map(item=>({...item,label:FRENCH_CONTENT.personalDetailLabels[item.label]||item.label}));data.experience=(data.experience||[]).map((item,index)=>({...item,...(FRENCH_CONTENT.experience[index]||{})}));data.projects=(data.projects||[]).map((item,index)=>({...item,...(FRENCH_CONTENT.projects[index]||{}),link1Label:item.link1Label==='GitHub source'?'Code GitHub':item.link1Label==='Research link'?'Lien de recherche':item.link1Label,link2Label:item.link2Label==='Live demo'?'Démo en ligne':item.link2Label==='Project link'?'Lien du projet':item.link2Label}));data.achievements=(data.achievements||[]).map((item,index)=>({...item,...(FRENCH_CONTENT.achievements[index]||{})}));data.skills=(data.skills||[]).map(value=>{const item=typeof value==='string'?{name:value,description:''}:value;return {...item,description:FRENCH_CONTENT.skillDescriptions[item.name]||item.description}});return data}
 document.querySelectorAll('[data-language]').forEach(button=>button.addEventListener('click',()=>{if(button.dataset.language===currentLanguage)return;currentLanguage=button.dataset.language;localStorage.setItem('portfolio-language',currentLanguage);document.getElementById('skill-detail').hidden=true;applyUiLanguage();loadPortfolio()}));
 applyUiLanguage();
+
+const portfolioIntro=document.getElementById('portfolio-intro');
+const introEnter=document.getElementById('portfolio-intro-enter');
+const introSkip=document.getElementById('portfolio-intro-skip');
+const introStorageKey='portfolio-intro-seen';
+const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(portfolioIntro&&!prefersReducedMotion&&sessionStorage.getItem(introStorageKey)!=='true'){
+  portfolioIntro.hidden=false;
+  document.body.classList.add('intro-active');
+  let introTimer;
+  const closeIntro=()=>{
+    if(portfolioIntro.classList.contains('is-closing'))return;
+    sessionStorage.setItem(introStorageKey,'true');
+    clearTimeout(introTimer);
+    portfolioIntro.classList.add('is-closing');
+    window.setTimeout(()=>{portfolioIntro.hidden=true;document.body.classList.remove('intro-active')},450);
+  };
+  introEnter.addEventListener('click',closeIntro);
+  introSkip.addEventListener('click',closeIntro);
+  introTimer=window.setTimeout(closeIntro,6800);
+}
 
 const menuButton=document.querySelector('.menu-button');
 const navLinks=document.querySelector('.nav-links');
