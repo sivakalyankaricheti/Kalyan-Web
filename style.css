@@ -58,3 +58,5 @@ body.intro-active{overflow:hidden}.portfolio-intro{position:fixed;inset:0;z-inde
 .portfolio-intro--video .portfolio-intro-lede{max-width:520px;margin-top:18px;color:#e1e8f5;font-size:clamp(.95rem,1.4vw,1.15rem);line-height:1.45}
 .portfolio-intro--video .portfolio-intro-actions{justify-content:flex-start;margin-top:20px;pointer-events:auto}
 @media(max-width:760px){.portfolio-intro--video .portfolio-intro-content{width:calc(100% - 40px);padding-bottom:74px}.portfolio-intro--video .portfolio-intro-kicker{margin-bottom:10px;font-size:.62rem;letter-spacing:.14em}.portfolio-intro--video h1{font-size:clamp(2.6rem,12vw,4rem)}.portfolio-intro--video .portfolio-intro-lede{margin-top:12px;font-size:.9rem;max-width:310px}.portfolio-intro--video .portfolio-intro-actions{margin-top:16px}.portfolio-intro--video .portfolio-intro-progress{bottom:12px}}
+
+.orbit img,.brand-photo{object-position:100% center;filter:none}
