@@ -48,3 +48,14 @@ body.intro-active{overflow:hidden}.portfolio-intro{position:fixed;inset:0;z-inde
 .portfolio-intro--video .portfolio-intro-media,.portfolio-intro--video .portfolio-intro-progress span{animation-duration:10s}
 
 @media(max-width:760px){.portfolio-intro--video .portfolio-intro-media{object-position:63% center}.portfolio-intro--video .portfolio-intro-actions{justify-content:center}.portfolio-intro--video .portfolio-intro-sound{max-width:calc(100vw - 48px)}}
+
+.portfolio-intro--video .portfolio-intro-shade{background:linear-gradient(90deg,rgba(4,10,22,.78),rgba(4,10,22,.38) 46%,rgba(4,10,22,.06) 76%),linear-gradient(0deg,rgba(4,10,22,.7),rgba(4,10,22,.04) 54%,rgba(4,10,22,.28))}
+.portfolio-intro--video .portfolio-intro-content{width:min(1180px,calc(100% - 64px));padding:0 0 86px;align-self:end;pointer-events:none}
+.portfolio-intro--video .portfolio-intro-kicker,.portfolio-intro--video h1,.portfolio-intro--video .portfolio-intro-lede{position:static;width:auto;height:auto;padding:0;margin:0;overflow:visible;clip:auto;white-space:normal}
+.portfolio-intro--video .portfolio-intro-kicker{margin:0 0 14px;color:var(--lime);font:700 .72rem 'DM Mono',monospace;letter-spacing:.19em}
+.portfolio-intro--video h1{max-width:700px;font-size:clamp(2.6rem,5.4vw,5.4rem);line-height:.9;letter-spacing:-.06em;color:#fff}
+.portfolio-intro--video h1 span{color:var(--cyan)}
+.portfolio-intro--video .portfolio-intro-lede{max-width:520px;margin-top:18px;color:#e1e8f5;font-size:clamp(.95rem,1.4vw,1.15rem);line-height:1.45}
+.portfolio-intro--video .portfolio-intro-actions{justify-content:flex-start;margin-top:20px;pointer-events:auto}
+.portfolio-intro-audio-hint{position:absolute;right:28px;bottom:38px;z-index:2;margin:0;color:#fff;font:700 .68rem 'DM Mono',monospace;letter-spacing:.08em;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+@media(max-width:760px){.portfolio-intro--video .portfolio-intro-content{width:calc(100% - 40px);padding-bottom:74px}.portfolio-intro--video .portfolio-intro-kicker{margin-bottom:10px;font-size:.62rem;letter-spacing:.14em}.portfolio-intro--video h1{font-size:clamp(2.25rem,10.5vw,3.45rem)}.portfolio-intro--video .portfolio-intro-lede{margin-top:12px;font-size:.9rem;max-width:310px}.portfolio-intro--video .portfolio-intro-actions{margin-top:16px}.portfolio-intro-audio-hint{right:20px;bottom:29px;font-size:.57rem;letter-spacing:.06em}.portfolio-intro--video .portfolio-intro-progress{bottom:12px}}
