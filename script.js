@@ -50,8 +50,7 @@ if(portfolioIntro&&!prefersReducedMotion){
     try{
       await introVideo.play();
     }catch(error){
-      introVideo.muted=true;
-      try{await introVideo.play()}catch(playError){}
+      introVideo.pause();
     }
   };
   const stopVideoSound=()=>{if(introVideo)introVideo.muted=true};
