@@ -46,3 +46,5 @@ body.intro-active{overflow:hidden}.portfolio-intro{position:fixed;inset:0;z-inde
 }
 
 .portfolio-intro--video .portfolio-intro-media,.portfolio-intro--video .portfolio-intro-progress span{animation-duration:10s}
+
+@media(max-width:760px){.portfolio-intro--video .portfolio-intro-media{object-position:63% center}.portfolio-intro--video .portfolio-intro-actions{justify-content:center}.portfolio-intro--video .portfolio-intro-sound{max-width:calc(100vw - 48px)}}
