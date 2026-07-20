@@ -24,7 +24,7 @@
     "#project-list > *",
     "#achievement-grid > *",
     "#gallery-grid > *",
-    "#skill-cloud > *",
+    "#technical-skill-cloud > *", "#soft-skill-cloud > *",
     ".certificate-list > *",
     ".section-index", ".section h2"
   ].join(",");

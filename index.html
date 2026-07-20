@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sivakalyankaricheti.github.io/Kalyan-Web/">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="style.css?v=20260720-9">
+  <link rel="stylesheet" href="style.css?v=20260720-10">
   <link rel="stylesheet" href="animations.css?v=20260720-1">
   <script type="application/ld+json">
   {
@@ -99,7 +99,10 @@
     <section class="section skills">
       <p class="section-index" data-i18n="skillsLabel">Technical Skills & Soft Skills</p>
       <p class="skill-instruction"><span data-i18n="skillInstruction">Tap a skill to view details</span> <span aria-hidden="true">↔</span></p>
-      <div class="skill-cloud reveal" id="skill-cloud"></div>
+      <div class="skill-groups">
+        <section class="skill-group" id="technical-skill-group"><h3 data-i18n="technicalSkills">Technical Skills</h3><div class="skill-cloud reveal" id="technical-skill-cloud"></div></section>
+        <section class="skill-group" id="soft-skill-group"><h3 data-i18n="softSkills">Soft Skills</h3><div class="skill-cloud reveal" id="soft-skill-cloud"></div></section>
+      </div>
       <div class="skill-detail" id="skill-detail" role="region" aria-live="polite" hidden>
         <button class="skill-detail-close" id="skill-detail-close" type="button" aria-label="Close skill details">×</button>
         <p data-i18n="skillDetails">Skill details</p><h3 id="skill-detail-title"></h3><div id="skill-detail-description"></div>
@@ -128,7 +131,7 @@
   </main>
 
   <footer><p>© <span id="year"></span> Siva Kalyan Karicheti</p><div class="footer-links"><a href="admin.html">Admin</a><a href="#top" data-i18n="backToTop">Back to top ↑</a></div></footer>
-  <script src="script.js?v=20260720-10"></script>
-  <script src="animations.js?v=20260720-1"></script>
+  <script src="script.js?v=20260720-11"></script>
+  <script src="animations.js?v=20260720-2"></script>
 </body>
 </html>
