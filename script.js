@@ -35,10 +35,7 @@ document.querySelectorAll('[data-language]').forEach(button=>button.addEventList
 applyUiLanguage();
 
 const portfolioIntro=document.getElementById('portfolio-intro');
-const introEnter=document.getElementById('portfolio-intro-enter');
-const introSkip=document.getElementById('portfolio-intro-skip');
 const introVoice=document.getElementById('portfolio-intro-voice');
-const introSound=document.getElementById('portfolio-intro-sound');
 const introStorageKey='portfolio-intro-seen';
 const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(portfolioIntro&&!prefersReducedMotion&&sessionStorage.getItem(introStorageKey)!=='true'){
@@ -50,12 +47,7 @@ if(portfolioIntro&&!prefersReducedMotion&&sessionStorage.getItem(introStorageKey
     try{
       introVoice.currentTime=0;
       await introVoice.play();
-      introSound.setAttribute('aria-pressed','true');
-      introSound.textContent=t('introReplay');
-    }catch(error){
-      introSound.setAttribute('aria-pressed','false');
-      introSound.textContent=t('introListen');
-    }
+    }catch(error){}
   };
   const closeIntro=()=>{
     if(portfolioIntro.classList.contains('is-closing'))return;
@@ -65,9 +57,6 @@ if(portfolioIntro&&!prefersReducedMotion&&sessionStorage.getItem(introStorageKey
     portfolioIntro.classList.add('is-closing');
     window.setTimeout(()=>{portfolioIntro.hidden=true;document.body.classList.remove('intro-active')},450);
   };
-  introEnter.addEventListener('click',closeIntro);
-  introSkip.addEventListener('click',closeIntro);
-  introSound.addEventListener('click',playIntroVoice);
   window.setTimeout(playIntroVoice,180);
   introTimer=window.setTimeout(closeIntro,6800);
 }
