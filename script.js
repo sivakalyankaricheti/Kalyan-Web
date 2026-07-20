@@ -2,8 +2,8 @@ const UI_TRANSLATIONS={
   en:{navAbout:'About',navExperience:'Experience',navWork:'Work',navGallery:'Gallery',navContact:'Contact',exploreWork:'Explore my work',aboutLabel:'About',aboutHeading:'Curious by Nature.<br>Practical by Design.',experienceLabel:'Experience & Education Background',projectsLabel:'Projects',achievementsLabel:'Achievements & Events',galleryLabel:'Gallery',galleryEmpty:'Gallery.',skillsLabel:'Technical Skills & Soft Skills',skillInstruction:'Tap a skill to view details',skillDetails:'Skill details',credentials:'Credentials',contactLabel:'Contact Details',contactHeading:'Let’s build something<br><span>useful together.</span>',contactText:'For AI, data, ERP or software opportunities, I’d be glad to connect.',backToTop:'Back to top ↑',openTo:'Open to opportunities',skillFallback:'Details for this skill can be added from the Admin page.',viewProject:'View project',moreDetails:'More details',openLink:'Open link ↗',viewCertificate:'View certificate ↗',portrait:'Portrait of'},
   fr:{navAbout:'À propos',navExperience:'Expérience',navWork:'Projets',navGallery:'Galerie',navContact:'Contact',exploreWork:'Découvrir mes projets',aboutLabel:'À propos',aboutHeading:'Curieux par nature.<br>Pragmatique par conception.',experienceLabel:'Expérience et formation',projectsLabel:'Projets',achievementsLabel:'Réalisations et événements',galleryLabel:'Galerie',galleryEmpty:'Galerie.',skillsLabel:'Compétences techniques et humaines',skillInstruction:'Touchez une compétence pour afficher les détails',skillDetails:'Détails de la compétence',credentials:'Certifications',contactLabel:'Coordonnées',contactHeading:'Construisons quelque chose<br><span>d’utile ensemble.</span>',contactText:'Pour des opportunités en IA, données, ERP ou logiciel, je serais ravi d’échanger.',backToTop:'Retour en haut ↑',openTo:'Ouvert aux opportunités',skillFallback:'Les détails de cette compétence peuvent être ajoutés depuis la page Admin.',viewProject:'Voir le projet',moreDetails:'Plus de détails',openLink:'Ouvrir le lien ↗',viewCertificate:'Voir le certificat ↗',portrait:'Portrait de'}
 };
-Object.assign(UI_TRANSLATIONS.en,{introKicker:'AI · DATA · SOFTWARE',introDescription:'Building practical systems where artificial intelligence, enterprise software and data meet.',introEnter:'Enter portfolio',introSkip:'Skip intro'});
-Object.assign(UI_TRANSLATIONS.fr,{introKicker:'IA · DONNÉES · LOGICIELS',introDescription:'Je conçois des systèmes concrets à la rencontre de l’intelligence artificielle, des logiciels d’entreprise et des données.',introEnter:'Entrer dans le portfolio',introSkip:'Passer l’introduction'});
+Object.assign(UI_TRANSLATIONS.en,{introKicker:'AI · DATA · SOFTWARE',introDescription:'Building practical systems where artificial intelligence, enterprise software and data meet.',introEnter:'Enter portfolio',introSkip:'Skip intro',introEnableSound:'Enable video sound'});
+Object.assign(UI_TRANSLATIONS.fr,{introKicker:'IA · DONNÉES · LOGICIELS',introDescription:'Je conçois des systèmes concrets à la rencontre de l’intelligence artificielle, des logiciels d’entreprise et des données.',introEnter:'Entrer dans le portfolio',introSkip:'Passer l’introduction',introEnableSound:'Activer le son de la vidéo'});
 const FRENCH_CONTENT={
   headline:'Je conçois des systèmes concrets à la rencontre de l’intelligence artificielle, des logiciels d’entreprise et des données.',
   aboutPrimary:'Je suis étudiant en MSc Intelligence Artificielle à l’ECE, école d’ingénieurs à Paris, titulaire d’un B.Tech en informatique et fort d’une expérience pratique en développement ERP.',
@@ -37,6 +37,7 @@ applyUiLanguage();
 const portfolioIntro=document.getElementById('portfolio-intro');
 const introEnter=document.getElementById('portfolio-intro-enter');
 const introSkip=document.getElementById('portfolio-intro-skip');
+const introSound=document.getElementById('portfolio-intro-sound');
 const introVideo=portfolioIntro?.querySelector('.portfolio-intro-media');
 const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(portfolioIntro&&!prefersReducedMotion){
@@ -45,15 +46,15 @@ if(portfolioIntro&&!prefersReducedMotion){
   let introTimer;
   const startIntroVideo=async()=>{
     if(!introVideo)return;
-    introVideo.muted=false;
+    introVideo.muted=true;
     introVideo.volume=1;
-    try{
-      await introVideo.play();
-    }catch(error){
-      introVideo.pause();
-    }
+    try{await introVideo.play()}catch(error){}
   };
-  const stopVideoSound=()=>{if(introVideo)introVideo.muted=true};
+  const enableVideoSound=async()=>{
+    if(!introVideo)return;
+    introVideo.muted=false;
+    try{await introVideo.play();introSound.hidden=true}catch(error){introVideo.muted=true;introSound.hidden=false}
+  };
   const closeIntro=()=>{
     if(portfolioIntro.classList.contains('is-closing'))return;
     clearTimeout(introTimer);
@@ -63,7 +64,7 @@ if(portfolioIntro&&!prefersReducedMotion){
   };
   introEnter.addEventListener('click',closeIntro);
   introSkip.addEventListener('click',closeIntro);
-  portfolioIntro.addEventListener('pointerdown',stopVideoSound,{once:true});
+  introSound.addEventListener('click',enableVideoSound);
   startIntroVideo();
   introTimer=window.setTimeout(closeIntro,10000);
 }
