@@ -56,15 +56,19 @@
 }
 
 /* Skill chips: small tactile bounce */
-#skill-cloud > * {
+#technical-skill-cloud > *,
+#soft-skill-cloud > * {
   transition: transform .25s var(--kw-ease), color .25s var(--kw-ease), border-color .25s var(--kw-ease);
 }
-#skill-cloud > *:hover,
-#skill-cloud > *:focus-visible {
+#technical-skill-cloud > *:hover,
+#technical-skill-cloud > *:focus-visible,
+#soft-skill-cloud > *:hover,
+#soft-skill-cloud > *:focus-visible {
   transform: translateY(-3px) scale(1.05);
   color: var(--kw-accent-2);
 }
-#skill-cloud > *:active {
+#technical-skill-cloud > *:active,
+#soft-skill-cloud > *:active {
   transform: translateY(-1px) scale(.97);
 }
 
@@ -174,4 +178,3 @@ section[id] { scroll-margin-top: 88px; }
   0%, 100% { filter: brightness(1); transform: scale(1); }
   50%      { filter: brightness(1.4); transform: scale(1.18); }
 }
-
