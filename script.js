@@ -92,7 +92,7 @@ async function loadPortfolio(){
     document.querySelector('.eyebrow').textContent=`${safeText(data.location)} · ${t('openTo')}`;
     document.getElementById('about-primary').textContent=safeText(data.aboutPrimary);
     document.getElementById('about-secondary').textContent=safeText(data.aboutSecondary);
-    const image=document.getElementById('profile-image'); image.src=data.profileImage||'assets/profile.jpg'; image.alt=`${t('portrait')} ${data.name}`;
+    const image=document.getElementById('profile-image'); if(image){image.src=data.profileImage||'assets/profile.jpg';image.alt=`${t('portrait')} ${data.name}`}
     document.querySelectorAll('.brand-photo').forEach(photo=>{photo.src=data.profileImage||'assets/profile.jpg';photo.alt=`${t('portrait')} ${data.name}`});
     const email=document.getElementById('email-link'); email.href=`mailto:${data.contact.email}`; email.textContent=`${data.contact.email} ↗`;
     const phone=document.getElementById('phone-link'); phone.href=`tel:${data.contact.phone.replace(/\s/g,'')}`; phone.textContent=`${data.contact.phone} ↗`;
