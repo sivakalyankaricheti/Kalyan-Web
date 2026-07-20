@@ -13,7 +13,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sivakalyankaricheti.github.io/Kalyan-Web/">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="style.css?v=20260720-2">
+  <link rel="stylesheet" href="style.css?v=20260720-3">
+  <link rel="stylesheet" href="animations.css?v=20260720-1">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,8 +32,8 @@
   </script>
 </head>
 <body>
-  <section class="portfolio-intro" id="portfolio-intro" aria-label="Portfolio introduction" hidden>
-    <img class="portfolio-intro-media" src="assets/ai-laptop-intro-motion.webp" alt="" aria-hidden="true">
+  <section class="portfolio-intro portfolio-intro--video" id="portfolio-intro" aria-label="Portfolio introduction" hidden>
+    <video class="portfolio-intro-media" autoplay muted loop playsinline preload="metadata" poster="assets/siva-kalyan-intro-poster.png" aria-hidden="true"><source src="assets/siva-kalyan-intro.mp4" type="video/mp4"></video>
     <audio id="portfolio-intro-voice" preload="auto"><source src="assets/intro-voice.wav" type="audio/wav"></audio>
     <div class="portfolio-intro-shade" aria-hidden="true"></div>
     <div class="portfolio-intro-content">
@@ -128,6 +129,7 @@
   </main>
 
   <footer><p>© <span id="year"></span> Siva Kalyan Karicheti</p><div class="footer-links"><a href="admin.html">Admin</a><a href="#top" data-i18n="backToTop">Back to top ↑</a></div></footer>
-  <script src="script.js?v=20260720-2"></script>
+  <script src="script.js?v=20260720-3"></script>
+  <script src="animations.js?v=20260720-1"></script>
 </body>
 </html>
