@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sivakalyankaricheti.github.io/Kalyan-Web/">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="style.css?v=20260720-1">
+  <link rel="stylesheet" href="style.css?v=20260720-2">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,12 +33,16 @@
 <body>
   <section class="portfolio-intro" id="portfolio-intro" aria-label="Portfolio introduction" hidden>
     <img class="portfolio-intro-media" src="assets/ai-laptop-intro-motion.webp" alt="" aria-hidden="true">
+    <audio id="portfolio-intro-voice" preload="auto"><source src="assets/intro-voice.wav" type="audio/wav"></audio>
     <div class="portfolio-intro-shade" aria-hidden="true"></div>
     <div class="portfolio-intro-content">
       <p class="portfolio-intro-kicker" data-i18n="introKicker">AI · DATA · SOFTWARE</p>
       <h1>Siva Kalyan<br><span>Karicheti.</span></h1>
       <p class="portfolio-intro-lede" data-i18n="introDescription">Building practical systems where artificial intelligence, enterprise software and data meet.</p>
-      <button class="portfolio-intro-enter" id="portfolio-intro-enter" type="button" data-i18n="introEnter">Enter portfolio</button>
+      <div class="portfolio-intro-actions">
+        <button class="portfolio-intro-enter" id="portfolio-intro-enter" type="button" data-i18n="introEnter">Enter portfolio</button>
+        <button class="portfolio-intro-sound" id="portfolio-intro-sound" type="button" aria-pressed="false" data-i18n="introListen">Listen to introduction</button>
+      </div>
     </div>
     <button class="portfolio-intro-skip" id="portfolio-intro-skip" type="button" data-i18n="introSkip">Skip intro</button>
     <div class="portfolio-intro-progress" aria-hidden="true"><span></span></div>
@@ -124,6 +128,6 @@
   </main>
 
   <footer><p>© <span id="year"></span> Siva Kalyan Karicheti</p><div class="footer-links"><a href="admin.html">Admin</a><a href="#top" data-i18n="backToTop">Back to top ↑</a></div></footer>
-  <script src="script.js?v=20260720-1"></script>
+  <script src="script.js?v=20260720-2"></script>
 </body>
 </html>
