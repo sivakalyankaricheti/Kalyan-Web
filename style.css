@@ -27,3 +27,11 @@ body.intro-active{overflow:hidden}.portfolio-intro{position:fixed;inset:0;z-inde
 @media(max-width:760px){.portfolio-intro-content{width:calc(100% - 40px);padding-bottom:86px}.portfolio-intro h1{font-size:clamp(3.6rem,17vw,5.8rem)}.portfolio-intro-lede{font-size:1rem;max-width:360px}.portfolio-intro-skip{top:16px;right:16px}.portfolio-intro-progress{right:16px;bottom:16px;left:16px}}
 
 .portfolio-intro--video .portfolio-intro-shade{background:linear-gradient(0deg,rgba(4,10,22,.68),rgba(4,10,22,.04) 44%,rgba(4,10,22,.32))}.portfolio-intro--video .portfolio-intro-content{width:100%;padding:0 24px 76px;align-self:end}.portfolio-intro--video .portfolio-intro-kicker,.portfolio-intro--video h1,.portfolio-intro--video .portfolio-intro-lede{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.portfolio-intro--video .portfolio-intro-actions{justify-content:center;margin:0}.portfolio-intro--video .portfolio-intro-progress{bottom:20px}@media(max-width:760px){.portfolio-intro--video .portfolio-intro-content{padding-bottom:62px}.portfolio-intro--video .portfolio-intro-progress{bottom:14px}}
+
+/* Keep the profile image and introduction together in the first desktop view. */
+@media(min-width:761px){
+  .hero{grid-template-columns:minmax(310px,390px) minmax(0,1fr);gap:0}
+  .hero-visual{grid-column:1;grid-row:1;justify-self:start;width:100%}
+  .hero-copy{grid-column:2;grid-row:1;align-self:center;padding-left:0}
+  .hero-visual .orbit{width:min(28vw,340px);height:min(28vw,340px)}
+}
