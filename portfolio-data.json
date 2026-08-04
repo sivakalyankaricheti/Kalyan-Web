@@ -45,78 +45,97 @@
   ],
   "skills": [
     {
+      "category": "technical",
       "name": "Python (Pandas, NumPy, Scikit-learn)",
       "description": "•Extensive knowledge in data manipulation using Pandas - DataFrames, merging, grouping, pivoting.\n•Knowledge on numerical computing with NumPy - arrays, broadcasting, vectorized operations.\n•Knowledge on building Machine Learning models using Scikit-learn - regression, classification, clustering.\n•Good knowledge on model evaluation train-test split, cross-validation, accuracy/precision/recall.\n•Basic knowledge in exploratory data analysis and visualization using Matplotlib and Seaborn.\n•Basic knowledge in feature engineering and handling missing data."
     },
     {
+      "category": "technical",
       "name": "SAP ABAP",
       "description": "•Exclusive knowledge of RICEF(Reports,Interfaces,Conversions,Enhacements And Forms) objects. 2020 – 2024 2018-2020 2017 – 2018.\n•Knowledge on Data Dictionary objects like Tables, Views, Structures, Table maintenance.\n•Extensive Knowledge in generating of Reports (Classical, Interactive and ALV).\n•Conversions: Call Transaction and Session Method’s using Data Migration.\n•Basic Knowledge in Enhancements User exits, Customer exists, BADI’S.\n•Knowledge on Layouts: SMARTFORMS Knowledge.\n•Good Knowledge on Modulepool Programming and creating different types of modulepool concept\nconnecting different concepts in it for creating Asset Mangement for Organisation.\n•Debugging techniques – Break Points to debugging."
     },
     {
+      "category": "technical",
       "name": "AWS",
       "description": "•Knowledge on core compute services – EC2 instances and basic deployment.\n•Knowledge on storage services – S3 buckets and object storage concepts.\n•Basic knowledge in Identity and Access Management (IAM) – users, roles, permissions.\n•Basic knowledge in database services – RDS fundamentals"
     },
     {
+      "category": "technical",
       "name": "MySQL",
       "description": "•Extensive knowledge in relational database design – schemas and normalization.\n•Knowledge on writing complex queries – JOINs, subqueries, GROUP BY, HAVING.\n•Good knowledge on indexing and basic query optimization.\n•Basic knowledge in stored procedures and triggers."
     },
     {
+      "category": "technical",
       "name": "Power BI",
       "description": "•Extensive knowledge in data modeling – relationships and star schema design.\n•Knowledge on DAX (Data Analysis Expressions) for measures and calculated columns.\n•Good knowledge on Power Query for data transformation and cleaning.\n•Knowledge on building interactive dashboards with slicers and filters."
     },
     {
+      "category": "technical",
       "name": "Data Visualization",
       "description": "•Knowledge on selecting appropriate chart types for different data.\n•Extensive knowledge in building dashboards using Power BI and Tableau.\n•Basic knowledge in visualization libraries in Python – Matplotlib, Seaborn."
     },
     {
+      "category": "technical",
       "name": "Statistics (GA4)",
       "description": "•Knowledge on setting up tracking and events in Google Analytics 4.\n•Basic knowledge in interpreting traffic sources, engagement, and conversions.\n•Basic knowledge in building custom reports and exploring user behavior."
     },
     {
+      "category": "technical",
       "name": "C Language",
       "description": "•Knowledge on programming logic and control flow.\n•Extensive knowledge in memory management – pointers, dynamic memory allocation.\n•Knowledge on data structures – arrays, linked lists, stacks, queues."
     },
     {
+      "category": "technical",
       "name": "HTML & CSS",
       "description": "•Knowledge on structuring web pages using semantic HTML elements.\n•Basic knowledge in forms, tables, and accessibility basics.\n•Knowledge on styling – selectors, box model, Flexbox, Grid.\n•Basic knowledge in responsive design using media queries."
     },
     {
+      "category": "technical",
       "name": "Tableau",
       "description": "•Extensive knowledge in connecting to and blending multiple data sources.\n•Knowledge on building calculated fields and parameters.\n•Good knowledge on designing interactive dashboards with filters and actions."
     },
     {
+      "category": "technical",
       "name": "SQL",
       "description": "•Extensive knowledge in writing SELECT queries with filtering, sorting, and aggregation.\n•Knowledge on JOIN operations – inner, left, right, full joins.\n•Good knowledge on subqueries and nested queries.\n•Basic knowledge in window functions."
     },
     {
+      "category": "technical",
       "name": "ChatGPT, Claude & Microsoft Copilot",
       "description": "•Knowledge on prompt engineering for accurate, structured outputs.\n•Extensive knowledge in using AI assistants for code generation, debugging, and documentation.\n•Basic knowledge in using AI tools for research summarization and content drafting."
     },
     {
+      "category": "technical",
       "name": "Excel (Pivot Tables, Dashboards, XLOOKUP)",
       "description": "•Extensive knowledge in building Pivot Tables for data summarization.\n•Knowledge on XLOOKUP and other lookup functions.\n•Good knowledge on building dynamic dashboards using charts and slicers.\n•Basic knowledge in conditional formatting and data validation."
     },
     {
+      "category": "soft",
       "name": "Adaptability",
       "description": ""
     },
     {
+      "category": "soft",
       "name": "Stakeholder Collaboration",
       "description": ""
     },
     {
+      "category": "soft",
       "name": "Curiosity & Continuous Learning",
       "description": ""
     },
     {
+      "category": "soft",
       "name": "Problem Solving",
       "description": ""
     },
     {
+      "category": "soft",
       "name": "Professional Communication",
       "description": ""
     },
     {
+      "category": "technical",
       "name": "Artificial Intelligence",
       "description": "•Knowledge on supervised and unsupervised learning – regression, classification, clustering, dimensionality reduction.\n•Knowledge on neural network architectures – ANN, CNN, RNN fundamentals.\n•Extensive knowledge in model training concepts – loss functions, gradient descent, overfitting/underfitting.\n•Basic knowledge in Natural Language Processing – tokenization, embeddings, text classification.\n•Basic knowledge in AI ethics and responsible AI practices."
     }
@@ -184,6 +203,16 @@
       "link1": "",
       "link2Label": "Project link",
       "link2": ""
+    },
+    {
+      "number": "05",
+      "category": "Javascript, HTML, CSS",
+      "title": "VRK CLINIC, Hyderabad",
+      "description": "Designed and developed a modern, responsive website for a healthcare clinic based in Hyderabad to strengthen its online presence and improve patient accessibility. The website provides a user-friendly interface that allows visitors to learn about the clinic, explore medical services, view doctor information, book appointments, and access contact details with ease.\n-Responsive design optimized for desktop, tablet, and mobile devices.\n-Online appointment booking functionality.\n-Doctor profiles and clinic information.\n-Medical services and treatment details.\n-Contact form with location and business hours.\n-Clean UI/UX with accessible navigation.\n-Performance optimization for faster page loading.\n-SEO-friendly structure to improve online visibility.",
+      "link1Label": "GitHub source",
+      "link1": "https://github.com/sivakalyankaricheti/VRK-Clinic-Website",
+      "link2Label": "Live demo",
+      "link2": "https://sivakalyankaricheti.github.io/VRK-Clinic-Website"
     }
   ],
   "gallery": [
