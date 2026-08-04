@@ -184,6 +184,16 @@
       "link1": "",
       "link2Label": "Project link",
       "link2": ""
+    },
+    {
+      "number": "05",
+      "category": "HTML, CSS & JavaScript",
+      "title": "VRK Clinic Website",
+      "description": "Clinic website — source code available on GitHub.",
+      "link1Label": "GitHub source",
+      "link1": "https://github.com/sivakalyankaricheti/VRK-Clinic-Website",
+      "link2Label": "Live demo",
+      "link2": ""
     }
   ],
   "gallery": [
